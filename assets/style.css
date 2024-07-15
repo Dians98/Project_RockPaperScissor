@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("1.jpg");
+    display: flex;
+    flex-direction: column;
+    font-family: "Maname", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.displayText,
+.choosen {
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+
+}
+
+.choosen{
+    font-size: 40px;
+    color: #6B8A7A;
+}
+
+.game {
+    display: flex;
+    flex-direction: column;
+    margin: 25px;
+}
+
+.button {
+    border: none;
+    /* Supprime les bordures du bouton */
+    cursor: pointer;
+    /* Change le curseur lorsqu'on passe sur le bouton */
+    /* Ombre du bouton */
+    border-radius: 15px;
+    /* Ajoute des coins arrondis au bouton */
+    height: 100px;
+    width: 100px;
+    background-color: #8D493A;
+    
+
+}
+
+a{
+    text-decoration: none !important;
+}
+
+.button:hover{
+    -webkit-transform: translateY(0px);
+	transform: translateY(-10px);
+
+}
+
+.rock_container {
+    margin: 50px auto;
+
+}
+
+.papper_scissor_container {
+    display: flex;
+    margin: 50px auto;
+    gap: 150px;
+}
+
+.playersChoice{
+    display: flex;
+    justify-content: space-around;
+}
+
+.cpuChoice,
+.userChoice{
+    font-size: 40px;
+
+}
+
+.userInfo,
+.cpuInfo{
+    display: flex;
+    flex-direction: column;
+    margin: auto 0;
+    text-align: center;
+    font-size: 40px;
+}
